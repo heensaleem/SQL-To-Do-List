@@ -53,6 +53,21 @@ toDoRouter.post('/', (req, res) => {
   
   });
 
+  toDoRouter.delete('/delete/:id', (req, res) => {
+    console.log('id', req.params.id);
+    const sqlQuery = `
+      DELETE FROM "todos"
+      WHERE "id" = ${req.params.id};
+    `
+    pool.query(sqlQuery)
+    .then((result) => {
+      console.log('result', result);
+      res.sendStatus(200);
+    }).catch((error) =>{
+      console.log('error', error);
+      res.sendStatus(500);
+    });
+  })
 
 
 

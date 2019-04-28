@@ -25,6 +25,8 @@ function setupClickListeners() {
     $('input').val('');
     saveTasks( dataToSend );
   });
+
+  $('#viewTasks').on('click', '.deleteBtn', deleteRow);
   $('#viewTasks').on('click', '.completeBtn', setToComplete);
 }
 
@@ -79,6 +81,21 @@ function refreshTasks(lists){
   }
 
 }
+
+function deleteRow(){
+  console.log('delete btn id:', $(this).data('id'));
+  let delUrl = `/todolists/delete/${$(this).data('id')}`;
+  $.ajax({
+    method: 'DELETE',
+    url: delUrl
+  }).then(function(response){
+    console.log(response);
+    getTasks();
+  }).catch(function(err){
+    console.log('error', err);
+  })
+}
+
  function setToComplete(){
    console.log('in settocomplete');
    let putUrl = `/todolists/${$(this).data('id')}`;
