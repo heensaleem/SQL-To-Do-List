@@ -79,3 +79,16 @@ function refreshTasks(lists){
   }
 
 }
+ function setToComplete(){
+   console.log('in settocomplete');
+   let putUrl = `/todolists/${$(this).data('id')}`;
+  $.ajax({
+    method: 'PUT',
+    url: putUrl
+  }).then(function (response){
+    console.log('response:', response);
+    getTasks();
+  }).catch(function (error){
+    console.log('error:', error);
+  });
+ }

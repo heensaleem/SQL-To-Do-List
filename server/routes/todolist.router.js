@@ -31,7 +31,27 @@ toDoRouter.post('/', (req, res) => {
     res.sendStatus(500);
   })
 })
-
+ toDoRouter.put('/:id', (req, res) => {
+  let record = req.body;
+  let id = req.params.id;
+  
+  console.log('Put route called with recordof ', record);
+  console.log('Put route called with id of', id);
+  let sqlQuery = `
+  UPDATE "todos"
+  SET "taskStatus" = 'true'
+  WHERE "id" = $1;
+  `;
+  pool.query(sqlQuery, [id])
+  .then((result) => {
+  console.log('result:', result);
+  res.sendStatus(200);
+  }).catch((error) => {
+  console.log('error', error);
+  res.sendStatus(500);
+  });
+  
+  });
 
 
 
