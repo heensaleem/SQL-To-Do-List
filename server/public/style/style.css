@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(165, 190, 214);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.inputs{
+    display:inline-flex;
+    flex-wrap: unset;
+    padding-right: 0px;
+}
+
+
+
+.completeBtn{
+    font-size: large;
+    text-align: center;
+    
+}
+.divInputs{
+    margin-bottom: 20px;
+}
+
+.deleteBtn{
+    display:block;
+    height:25px;
+    font-size: x-small;
+    margin:auto;
+}
+
+
+.footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color:rgb(58, 67, 77);
+         text-align: center;
+         color:brown;
+ }
+
+
+
+
+
+
+
