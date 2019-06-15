@@ -49,7 +49,7 @@ In order to run this project you'll need to install:
 
 ### ScreenShot
 
-<img width="1082" alt="Screen Shot 2019-06-14 at 9 47 35 PM" src="https://user-images.githubusercontent.com/47267211/59546193-0ee92880-8eef-11e9-89a2-f7ad89765a7b.png">
+<img width="903" alt="Screen Shot 2019-06-14 at 10 07 33 PM" src="https://user-images.githubusercontent.com/47267211/59546330-e3673d80-8ef0-11e9-977a-87c0def30f3a.png">
 
 
 ### Completed Features
