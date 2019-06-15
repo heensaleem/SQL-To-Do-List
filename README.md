@@ -47,6 +47,10 @@ In order to run this project you'll need to install:
 - run npm start to start your express server and run the project.
 - you should be able to test the project out by default on localhost: 5000
 
+### ScreenShot
+
+<img width="1082" alt="Screen Shot 2019-06-14 at 9 47 35 PM" src="https://user-images.githubusercontent.com/47267211/59546193-0ee92880-8eef-11e9-89a2-f7ad89765a7b.png">
+
 
 ### Completed Features
 
